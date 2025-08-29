@@ -1,0 +1,61 @@
+{
+    "name": "karadumann/flarum-advanced-registration-roles",
+    "description": "Gelişmiş kayıt sırasında rol seçme sistemi - Advanced role selection during registration",
+    "keywords": [
+        "flarum",
+        "extension",
+        "registration",
+        "roles",
+        "groups",
+        "user-management"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.0.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "flarum/testing": "^1.0.0"
+    },
+    "authors": [
+        {
+            "name": "Karadumann",
+            "email": "info@karadumann.com",
+            "homepage": "https://github.com/Karadumann"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Karadumann/flarum-advanced-registration-roles/issues",
+        "source": "https://github.com/Karadumann/flarum-advanced-registration-roles",
+        "forum": "https://discuss.flarum.org"
+    },
+    "homepage": "https://github.com/Karadumann/flarum-advanced-registration-roles",
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/Karadumann"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Karadumann\\AdvancedRegistrationRoles\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Advanced Registration Roles",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-user-tag",
+                "backgroundColor": "#3498db",
+                "color": "#fff"
+            }
+        },
+        "flagrow": {
+            "discuss": "https://discuss.flarum.org"
+        }
+    },
+    "minimum-stability": "beta",
+    "prefer-stable": true
+}

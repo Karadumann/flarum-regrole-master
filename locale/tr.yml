@@ -1,0 +1,95 @@
+karadumann-advanced-registration-roles:
+  admin:
+    settings:
+      title: Gelişmiş Kayıt Rolleri
+      general_settings: Genel Ayarlar
+      registration_title_label: Kayıt Başlığı
+      registration_title_placeholder: "Rolünüzü Seçin"
+      registration_title_help: Kayıt formunda gösterilecek başlık
+      registration_description_label: Kayıt Açıklaması
+      registration_description_placeholder: "Lütfen hesabınız için uygun rolü seçin..."
+      registration_description_help: Kayıt formunda gösterilecek açıklama metni
+      allow_multiple_roles_label: Çoklu Rol Seçimine İzin Ver
+      allow_multiple_roles_help: Kullanıcıların birden fazla rol seçmesine izin verir
+      force_role_selection_label: Rol Seçimini Zorunlu Kıl
+      force_role_selection_help: Kullanıcılar kayıt olmak için en az bir rol seçmek zorunda kalır
+      show_role_descriptions_label: Rol Açıklamalarını Göster
+      show_role_descriptions_help: Kayıt formunda rol açıklamalarını gösterir
+      show_role_icons_label: Rol İkonlarını Göster
+      show_role_icons_help: Kayıt formunda rol ikonlarını gösterir
+      role_management: Rol Yönetimi
+      role_management_help: Kayıt sırasında seçilebilecek rolleri yönetin
+      no_groups_available: Kullanılabilir grup bulunamadı
+      enable_role: Rolü Etkinleştir
+      disable_role: Rolü Devre Dışı Bırak
+      edit_role: Rolü Düzenle
+      role_enabled: "{role} rolü etkinleştirildi"
+      role_disabled: "{role} rolü devre dışı bırakıldı"
+      settings_saved: Ayarlar başarıyla kaydedildi
+      
+    group_modal:
+      title: "{group} Rolü Düzenle"
+      description_label: Rol Açıklaması
+      description_placeholder: Bu rolün ne işe yaradığını açıklayın...
+      description_help: Kayıt sırasında kullanıcılara gösterilecek açıklama
+      icon_label: Rol İkonu
+      icon_help: FontAwesome ikon sınıfı (örn. fas fa-users)
+      color_label: Rol Rengi
+      order_label: Sıralama
+      order_help: Rollerin kayıt formundaki görünüm sırası (0 = en üstte)
+      preview_title: Önizleme
+      save_button: Kaydet
+      saved_message: Rol ayarları kaydedildi
+      
+    permissions:
+      assign_registration_roles: Kayıt rollerini atayabilir
+      manage_registration_roles: Kayıt rollerini yönetebilir
+      view_registration_settings: Kayıt ayarlarını görüntüleyebilir
+      
+  forum:
+    loading_roles: Roller yükleniyor...
+    load_error: Roller yüklenirken hata oluştu
+    role_selection_required: Devam etmek için en az bir rol seçmelisiniz
+    multiple_roles_allowed: Birden fazla rol seçebilirsiniz
+    single_role_only: Sadece bir rol seçebilirsiniz
+    role_selected: Rol seçildi
+    role_deselected: Rol seçimi kaldırıldı
+    
+  console:
+    sync_roles:
+      description: Mevcut kullanıcılar için kayıt rollerini senkronize et
+      user_option: Belirli kullanıcı ID'si (isteğe bağlı)
+      dry_run_option: Değişiklikleri uygulamadan önizle
+      force_option: Mevcut rolleri zorla güncelle
+      starting: Rol senkronizasyonu başlatılıyor...
+      dry_run_mode: "DRY RUN MODU - Değişiklikler uygulanmayacak"
+      processing_user: "Kullanıcı işleniyor: {username} (ID: {id})"
+      user_updated: "✓ Kullanıcı güncellendi: {username}"
+      user_skipped: "- Kullanıcı atlandı: {username} (zaten güncel)"
+      user_not_found: "✗ Kullanıcı bulunamadı: ID {id}"
+      completed: "Senkronizasyon tamamlandı. İşlenen: {processed}, Güncellenen: {updated}, Atlanan: {skipped}"
+      no_users: Senkronize edilecek kullanıcı bulunamadı
+      
+  api:
+    validation:
+      role_selection_required: En az bir rol seçmelisiniz
+      invalid_role_selection: Geçersiz rol seçimi
+      role_not_allowed: Bu rol kayıt için izin verilmiyor
+      multiple_roles_not_allowed: Birden fazla rol seçimine izin verilmiyor
+      role_not_found: Seçilen rol bulunamadı
+      
+  email:
+    registration_roles_assigned:
+      subject: Kayıt Rolleriniz Atandı
+      body: |
+        Merhaba {username},
+        
+        {forum_title} forumuna kayıt olduğunuz için teşekkürler!
+        
+        Size aşağıdaki roller atanmıştır:
+        {roles}
+        
+        Bu roller size forum içerisinde belirli yetkileri sağlar. Herhangi bir sorunuz varsa lütfen yöneticilerle iletişime geçin.
+        
+        İyi forumlar!
+        {forum_title} Ekibi
